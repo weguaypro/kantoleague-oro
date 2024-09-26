@@ -179,7 +179,8 @@ p.copyright a {
 /* Menu Colors Start */
 /* ------------------------------------------------*/
 .menu {
-  background-color: #a040a0;
+  background-color: #00897c;
+  background: linear-gradient(356deg, rgba(0,50,42,1) 0%, #00897c 100%);
 }
 @media only screen and (min-width: 1200px) {
   .menu {
@@ -442,7 +443,8 @@ p.copyright a {
 /* Notify Screen Colors Start */
 /* ------------------------------------------------*/
 .notify {
-  background-color: #a040a0;
+  background-color: #00897c;
+  background: linear-gradient(356deg, rgba(0,50,42,1) 0%, #00897c 100%);
 }
 
 /* ------------------------------------------------*/
@@ -452,7 +454,8 @@ p.copyright a {
 /* Stay-in-touch Screen Colors Start */
 /* ------------------------------------------------*/
 .stayintouch {
-  background-color: #a040a0;
+  background-color: #cea218;
+  background: linear-gradient(356deg, #543e03 0%, #cea218 100%);
 }
 @media only screen and (min-width: 1200px) {
   .stayintouch {
