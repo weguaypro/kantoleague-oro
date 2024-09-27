@@ -543,7 +543,8 @@ $(window).on("load", function() {
     // --------------------------------------------- //
     // KBW-Countdown Start
     // --------------------------------------------- //
-    $('#countdown').countdown({until: $.countdown.UTCDate(+10, 2024, 10, 7), format: 'D'});
+    // $('#countdown').countdown({until: $.countdown.UTCDate(+10, 2024, 10, 7), format: 'D'});
+    $('#countdown').countdown({until: $.countdown.UTCDate(0, 2024, 9, 11), format: 'D'});
     // --------------------------------------------- //
     // KBW-Countdown End
     // --------------------------------------------- //

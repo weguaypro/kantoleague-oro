@@ -17,34 +17,31 @@
  * ------------------------------------------------
  * Table of Contents End
  * ------------------------------------------------ */
-.blockquote__container {
-  background-image: url("../../img/backgrounds/1400x900-bg-quote-1.webp");
-}
 
 /* ------------------------------------------------*/
 /* Basic Color Options Start */
 /* ------------------------------------------------*/
 ::-moz-selection {
-  background-color: #c6e064;
+  background-color: #7b7b7b;
   color: #070707;
   text-shadow: none;
 }
 ::selection {
-  background-color: #c6e064;
+  background-color: #7b7b7b;
   color: #070707;
   text-shadow: none;
 }
 
 ::-webkit-scrollbar {
-  background: #963c96;
+  background: #d9d9d9;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #963c96;
+  background-color: #d9d9d9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #c6e064;
+  background-color: #7b7b7b;
 }
 
 html {
@@ -69,7 +66,7 @@ h1 {
 }
 
 h2 {
-  color: silver;
+  color: #01493b;
 }
 h2::after {
   background-color: #00897c;
@@ -103,7 +100,10 @@ a.light {
 }
 
 p {
-  color: #070707;
+  color: #424242;
+}
+p b{
+  font-weight: bold;
 }
 p.light {
   color: #ffffff;
@@ -153,11 +153,11 @@ p.copyright a {
 }
 
 .color-layer-medium {
-  background-color: rgba(31, 5, 35, 0.5);
+  background-color: rgba(0, 36, 30, 0.6);
 }
 
 .color-layer-dark {
-  background-color: rgba(31, 5, 35, 0.7);
+  background-color: rgba(0, 36, 30, 0.6);
 }
 
 .bg-light {
@@ -165,7 +165,7 @@ p.copyright a {
 }
 
 .bg-medium {
-  background-color: #ADD322;
+  background-color: #00897c;
 }
 
 .bg-dark {
@@ -184,7 +184,7 @@ p.copyright a {
 }
 @media only screen and (min-width: 1200px) {
   .menu {
-    background-color: transparent;
+    background: transparent;
   }
 }
 
@@ -241,7 +241,7 @@ p.copyright a {
   color: #ffffff;
 }
 .no-touch .socials li a:hover {
-  color: #cee57a;
+  color: #cea218;
 }
 
 /* ------------------------------------------------*/
