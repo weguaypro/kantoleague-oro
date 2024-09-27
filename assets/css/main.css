@@ -3155,6 +3155,36 @@ form .inputs-description {
   }
 }
 
+.alert-teams {
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.alert-teams .content {
+  padding: 40px 20px;
+  border: 1px solid #bfbfbf;
+  text-align: center;
+  background: url("../img/equipos/bg-teams-mobile.webp") center no-repeat;
+}
+.alert-teams .content h5 {
+  font: normal 700 1.7rem/1.2 "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.alert-teams .content p {
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 15px;
+}
+.alert-teams .content .button {
+  height: 44px;
+    line-height: 38px !important;
+}
+
 .pswp__caption__center h4 {
   font: normal 700 1.5rem/1.2 "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -3228,9 +3258,74 @@ form .inputs-description {
 
 
 /* ------------------------------------------------*/
+/* Categories Nav */
+/* ------------------------------------------------*/
+.nav_categories {
+  width: 100%;
+  height: 55px; /* Mantiene la altura fija */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  background: #cea218;
+  background: linear-gradient(356deg, #543e03 0%, #cea218 100%);
+  padding: 10px 0; /* Alinea mejor los ítems verticalmente */
+  overflow-y: hidden; /* Evita el scroll vertical */
+  overflow-x: auto; /* Activa el scroll horizontal */
+  white-space: nowrap; /* Evita que los elementos se envuelvan en varias líneas */
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  display: none;
+}
+.nav_categories ul {
+  display: inline-flex; /* Alinea los elementos horizontalmente */
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  margin: 0;
+  list-style: none; /* Quita los puntos de la lista */
+}
+.nav_categories ul li {
+  margin-right: 15px; /* Espacio entre los ítems */
+}
+.nav_categories ul li:last-child {
+  margin-right: 0;
+}
+.nav_categories ul li a {
+  padding: 6px 17px 4px;
+  display: inline-block; /* Mantiene el bloque alineado horizontalmente */
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap; /* Evita que el texto se divida en líneas */
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav_categories ul li a:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.nav_categories ul li a i {
+  margin-right: 4px;
+}
+/* ------------------------------------------------*/
+/* Categories Nav End */
+/* ------------------------------------------------*/
+
+
+/* ------------------------------------------------*/
 /* Responsive Global */
 /* ------------------------------------------------*/
 @media only screen and (max-width: 700px) {
+  .nav_categories {
+    display: block;
+  }
   .media-2 {
     background-image: url("../img/backgrounds/1600x1200-bg-c1-01-mobile.webp");
   }
@@ -3244,6 +3339,9 @@ form .inputs-description {
   }
   .my-gallery__descr h4 small {
     display: none;
+  }
+  .section-main__aside {
+    padding-bottom: 70px;
   }
 }
 /* ------------------------------------------------*/

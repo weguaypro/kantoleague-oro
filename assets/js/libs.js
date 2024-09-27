@@ -93,4 +93,151 @@ function(e){"use strict";e.ajaxChimp={responses:{"We have sent you a confirmatio
  * ------------------------------------------------
  * Table of Contents End
  * ------------------------------------------------ */
-$(function(){Modernizr.svg||$("img[src*='svg']").attr("src",function(){return $(this).attr("src").replace(".svg",".png")});try{$.browserSelector(),$("html").hasClass("chrome")&&$.smoothScroll()}catch(s){}$("img, a").on("dragstart",function(s){s.preventDefault()}),$(".works-link").each(function(){$(this).append('<div class="picture"></div>').children(".picture").css({"background-image":"url("+$(this).attr("data-image")+")"})});var n=$("#menu"),i=$("#menu-trigger"),e=$("#menu-close"),o=$("#stayintouch-trigger"),a=$(".stayintouch"),t=$("#stayintouch-close"),l=$(".aside__content"),d=$("#about"),c=$("#notify-trigger"),r=$("#notify-close"),u=$("#intro"),v=$("#home-trigger"),f=$("#about-trigger, #more-info"),m=$("#works-trigger, .open-teams"),C=$("#contact-trigger"),h=$("#about"),b=$("#works"),p=$("#contact"),g=$("#about-close"),w=$("#works-close"),k=$("#contact-close");o.on("click",function(s){console.log("1"),s.preventDefault(),l.addClass("animate-out"),a.hasClass("animate-out")&&a.removeClass("animate-out"),setTimeout(function(){a.addClass("animate-in"),$("html").hasClass("no-csstransitions")&&t.addClass("is-scaled-up"),$("body").addClass("overflow-hidden")},200),setTimeout(function(){t.addClass("is-scaled-up")},1600)}),t.on("click",function(s){ç,console.log("2"),s.preventDefault(),a.addClass("animate-out"),$("body").removeClass("overflow-hidden"),setTimeout(function(){l.removeClass("animate-out"),a.removeClass("animate-in"),t.removeClass("is-scaled-up")},300)}),c.on("click",function(s){console.log("3"),s.preventDefault(),u.addClass("is-scaled-down"),$("body").addClass("overflow-hidden"),setTimeout(function(){d.addClass("is-visible")},150),setTimeout(function(){r.addClass("is-scaled-up")},1400)}),r.on("click",function(s){console.log("4"),s.preventDefault(),d.removeClass("is-visible"),setTimeout(function(){$("body").removeClass("overflow-hidden"),u.removeClass("is-scaled-down"),r.removeClass("is-scaled-up")},150)}),i.on("click",function(s){console.log("5"),s.preventDefault(),$("body").addClass("overflow-hidden"),$("#main").addClass("overflow-hidden"),setTimeout(function(){n.addClass("is-visible")},150),setTimeout(function(){e.addClass("is-scaled-up")},1400)}),e.on("click",function(s){console.log("5"),s.preventDefault(),n.removeClass("is-visible"),setTimeout(function(){$("body").removeClass("overflow-hidden"),$("#main").removeClass("overflow-hidden"),e.removeClass("is-scaled-up")},150)}),v.on("click",function(s){console.log("7"),s.preventDefault(),n.removeClass("is-visible"),setTimeout(function(){$("body").removeClass("overflow-hidden"),$("#main").removeClass("overflow-hidden"),e.removeClass("is-scaled-up")},150)}),$(".inner-trigger").on("click",function(s){console.log("8"),$(this).data("id")?$(".all-category").hide():$(".all-category").show(),"sub-11"===$(this).data("id")?$(".sub-11").show():"sub-13"===$(this).data("id")?$(".sub-13").show():"sub-15"===$(this).data("id")?$(".sub-15").show():"sub-17"===$(this).data("id")?$(".sub-17").show():"sub-20"===$(this).data("id")?$(".sub-20").show():$(".sub-11, .sub-20").hide(),u.addClass("is-scaled-down"),setTimeout(function(){n.removeClass("is-visible"),e.removeClass("is-scaled-up")},800)}),$(".inner-close").on("click",function(s){console.log("9"),setTimeout(function(){u.removeClass("is-scaled-down"),$("body").removeClass("overflow-hidden"),$("#main").removeClass("overflow-hidden")},200)}),f.on("click",function(s){console.log("10"),s.preventDefault(),setTimeout(function(){h.addClass("is-visible").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(){g.addClass("is-scaled-up")}),$("html").hasClass("no-csstransitions")&&g.addClass("is-scaled-up")},200)}),m.on("click",function(s){s.preventDefault(),setTimeout(function(){b.addClass("is-visible").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(){w.addClass("is-scaled-up")}),$("html").hasClass("no-csstransitions")&&w.addClass("is-scaled-up")},200)}),C.on("click",function(s){s.preventDefault(),setTimeout(function(){p.addClass("is-visible").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(){k.addClass("is-scaled-up")}),$("html").hasClass("no-csstransitions")&&k.addClass("is-scaled-up")},200)}),g.on("click",function(s){s.preventDefault(),h.removeClass("is-visible"),setTimeout(function(){g.removeClass("is-scaled-up")},200)}),w.on("click",function(s){s.preventDefault(),b.removeClass("is-visible"),setTimeout(function(){w.removeClass("is-scaled-up")},200)}),k.on("click",function(s){s.preventDefault(),p.removeClass("is-visible"),setTimeout(function(){k.removeClass("is-scaled-up")},200)})});
+$((function() {
+    Modernizr.svg || $("img[src*='svg']").attr("src", (function() {
+        return $(this).attr("src").replace(".svg", ".png")
+    }));
+    try {
+        $.browserSelector(), $("html").hasClass("chrome") && $.smoothScroll()
+    } catch(e) {}
+    $("img, a").on("dragstart", (function(e) {
+        e.preventDefault()
+    })), $(".works-link").each((function() {
+        $(this).append('<div class="picture"></div>').children(".picture").css({
+            "background-image": "url(" + $(this).attr("data-image") + ")"
+        })
+    }));
+    var e = $("#menu"), t = $("#menu-trigger"), n = $("#menu-close"), i = $("#stayintouch-trigger"), o = $(".stayintouch"), r = $("#stayintouch-close"), a = $(".aside__content"), s = $("#about"), l = $("#notify-trigger"), c = $("#notify-close"), u = $("#intro"), d = $("#home-trigger"), p = $("#about-trigger, #more-info"), f = $("#works-trigger, .open-teams"), h = $("#contact-trigger"), m = $("#about"), v = $("#works"), g = $("#contact"), y = $("#about-close"), b = $("#works-close"), x = $("#contact-close"); i.on("click", (function(e) {
+        console.log("1"),
+        e.preventDefault(),
+        a.addClass("animate-out"),
+        o.hasClass("animate-out") && o.removeClass("animate-out"),
+        setTimeout((function() {
+            o.addClass("animate-in"),
+            $("html").hasClass("no-csstransitions") && r.addClass("is-scaled-up"),
+            $("body").addClass("overflow-hidden")
+        }), 200),
+        setTimeout((function() {
+            r.addClass("is-scaled-up")
+        }), 1600)
+    })), r.on("click", (function(e) {ç
+        console.log("2"),
+        e.preventDefault(),
+        o.addClass("animate-out"),
+        $("body").removeClass("overflow-hidden"),
+        setTimeout((function() {
+            a.removeClass("animate-out"),
+            o.removeClass("animate-in"),
+            r.removeClass("is-scaled-up")
+        }), 300)
+    })), l.on("click", (function(e) {
+        console.log("3"),
+        e.preventDefault(),
+        u.addClass("is-scaled-down"),
+        $("body").addClass("overflow-hidden"),
+        setTimeout((function() {
+            s.addClass("is-visible")
+        }), 150),
+        setTimeout((function() {
+            c.addClass("is-scaled-up")
+        }), 1400)
+    })), c.on("click", (function(e) {
+        console.log("4"),
+        e.preventDefault(),
+        s.removeClass("is-visible"),
+        setTimeout((function() {
+            $("body").removeClass("overflow-hidden"),
+            u.removeClass("is-scaled-down"),
+            c.removeClass("is-scaled-up")
+        }), 150)
+    })), t.on("click", (function(t) {
+        console.log("5"),
+        t.preventDefault(),
+        $("body").addClass("overflow-hidden"),
+        $("#main").addClass("overflow-hidden"),
+        setTimeout((function() {
+            e.addClass("is-visible")
+        }), 150),
+        setTimeout((function() {
+            n.addClass("is-scaled-up")
+        }), 1400)
+    })), n.on("click", (function(t) {
+        console.log("5"),
+        t.preventDefault(),
+        e.removeClass("is-visible"),
+        setTimeout((function() {
+            $("body").removeClass("overflow-hidden"),
+            $("#main").removeClass("overflow-hidden"),
+            n.removeClass("is-scaled-up")
+        }), 150)
+    })), d.on("click", (function(t) {
+        console.log("7"),
+        t.preventDefault(),
+        e.removeClass("is-visible"),
+        setTimeout((function() {
+            $("body").removeClass("overflow-hidden"),
+            $("#main").removeClass("overflow-hidden"),
+            n.removeClass("is-scaled-up")
+        }), 150)
+    })), $(".inner-trigger").on("click", (function(t) {
+        console.log("8"),
+        $(this).data('id') ? $(".all-category").hide() : $(".all-category").show()
+        $(this).data('id') === "sub-11" ? $(".sub-11").show() : $(this).data('id') === "sub-13" ? $(".sub-13").show() : $(this).data('id') === "sub-15" ? $(".sub-15").show() : $(this).data('id') === "sub-17" ? $(".sub-17").show() : $(this).data('id') === "sub-20" ? $(".sub-20").show() : $(".sub-11, .sub-20").hide(),
+
+        u.addClass("is-scaled-down"),
+        setTimeout((function() {
+            e.removeClass("is-visible"),
+            n.removeClass("is-scaled-up")
+        }), 800)
+    })), $(".inner-close").on("click", (function(e) {
+        console.log("9"),
+        setTimeout((function() {
+            u.removeClass("is-scaled-down"),
+            $("body").removeClass("overflow-hidden"),
+            $("#main").removeClass("overflow-hidden")
+        }), 200)
+    })), p.on("click", (function(e) {
+        console.log("10"),
+        e.preventDefault(),
+        setTimeout((function() {
+            m.addClass("is-visible").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", (function() {
+                y.addClass("is-scaled-up")
+            })),
+            $("html").hasClass("no-csstransitions") && y.addClass("is-scaled-up")
+        }), 200)
+    })), f.on("click", (function(e) {
+        e.preventDefault(),
+        setTimeout((function() {
+            v.addClass("is-visible").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", (function() {
+                b.addClass("is-scaled-up")
+            })),
+            $("html").hasClass("no-csstransitions") && b.addClass("is-scaled-up")
+        }), 200)
+    })), h.on("click", (function(e) {
+        e.preventDefault(),
+        setTimeout((function() {
+            g.addClass("is-visible").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", (function() {
+                x.addClass("is-scaled-up")
+            })),
+            $("html").hasClass("no-csstransitions") && x.addClass("is-scaled-up")
+        }), 200)
+    })), y.on("click", (function(e) {
+        e.preventDefault(),
+        m.removeClass("is-visible"),
+        setTimeout((function() {
+            y.removeClass("is-scaled-up")
+        }), 200)
+    })), b.on("click", (function(e) {
+        e.preventDefault(),
+        v.removeClass("is-visible"),
+        setTimeout((function() {
+            b.removeClass("is-scaled-up")
+        }), 200)
+    })), x.on("click", (function(e) {
+        e.preventDefault(),
+        g.removeClass("is-visible"),
+        setTimeout((function() {
+            x.removeClass("is-scaled-up")
+        }), 200)
+    }))
+}));
