@@ -114,9 +114,6 @@ p.copyright {
 p.copyright a {
   color: #ffffff;
 }
-.no-touch p.copyright a:hover {
-  color: rgba(255, 255, 255, 0.6);
-}
 
 .aside__title {
   color: #ffffff;
@@ -215,7 +212,7 @@ p.copyright a {
   color: #ffffff;
 }
 .no-touch p.copyright a:hover {
-  color: #cee57a;
+  color: #cea218;
 }
 
 /* ------------------------------------------------*/
@@ -225,7 +222,6 @@ p.copyright a {
 /* Main Section Aside Colors Start */
 /* ------------------------------------------------*/
 .section-main__aside {
-  /* background-color: #cea218; */
   background: #cea218;
   background: linear-gradient(356deg, #543e03 0%, #cea218 100%);
   background-repeat: repeat;

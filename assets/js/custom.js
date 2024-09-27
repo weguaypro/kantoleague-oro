@@ -22,7 +22,9 @@ $(window).on("load", function() {
     // --------------------------------------------- //
     // Loader & Main Section Loading Animation Start
     // --------------------------------------------- //
-  
+    $(document).bind("contextmenu",function(e){
+      return false;
+    });
     setTimeout(function(){
       $(".loader").addClass('fade-dark');
       $(".loader__logo").removeClass('slideInDown').addClass('flipOutY');

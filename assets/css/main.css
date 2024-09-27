@@ -61,27 +61,27 @@
 }
 
 .feature-image-1 {
-  background-image: url("../img/beneficios/1200x900-feature-1.webp");
+  background-image: url("../img/beneficios/1.webp");
 }
 
 .feature-image-2 {
-  background-image: url("../img/features/1200x900-feature-2.webp");
+  background-image: url("../img/beneficios/2.webp");
 }
 
 .feature-image-3 {
-  background-image: url("../img/features/1200x900-feature-3.webp");
+  background-image: url("../img/beneficios/3.webp");
 }
 
 .feature-image-4 {
-  background-image: url("../img/features/1200x900-feature-4.webp");
+  background-image: url("../img/beneficios/4.webp");
 }
 
 .feature-image-5 {
-  background-image: url("../img/features/1200x900-feature-5.webp");
+  background-image: url("../img/beneficios/5.webp");
 }
 
 .feature-image-6 {
-  background-image: url("../img/features/1200x900-feature-6.webp");
+  background-image: url("../img/beneficios/6.webp");
 }
 
 /* ------------------------------------------------*/
@@ -1056,7 +1056,7 @@ img {
 /* Typography Start */
 /* ------------------------------------------------*/
 h1 {
-  font: normal 700 4rem/1.2 "Montserrat", sans-serif;
+  font: normal 700 3.8rem/1.2 "Montserrat", sans-serif;
   letter-spacing: -0.1rem;
   color: #fff;
 }
@@ -1130,7 +1130,7 @@ h1 {
 h2 {
   position: relative;
   display: inline-block;
-  font: normal 700 5rem/1 "Montserrat", sans-serif;
+  font: normal 700 4.6rem/1 "Montserrat", sans-serif;
   letter-spacing: -0.14rem;
   color: #adafaf;
   padding-bottom: 0.4rem;
@@ -2838,6 +2838,21 @@ form .inputs-description {
   position: relative;
   margin-top: 3rem;
   padding: 0 3rem;
+}
+.section-inner__controls .logo {
+  display: none;
+}
+.section-inner__controls .logo img {
+  position: absolute;
+  right: 3rem;
+  height: 64px;
+  width: auto;
+  top: -9px;
+}
+@media only screen and (max-width: 768px) {
+  .section-inner__controls .logo {
+    display: block;
+  }
 }
 @media only screen and (min-width: 768px) {
   .section-inner__controls {
