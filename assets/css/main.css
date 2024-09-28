@@ -3293,8 +3293,10 @@ form .inputs-description {
   margin-right: 0;
 }
 .nav_categories ul li a {
-  padding: 6px 17px 4px;
-  display: inline-block; /* Mantiene el bloque alineado horizontalmente */
+  padding: 4px 17px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 100px;
   color: #ffffff;
@@ -3313,6 +3315,27 @@ form .inputs-description {
 }
 .nav_categories ul li a i {
   margin-right: 4px;
+}
+.nav_categories ul li a img {
+  height: 19px;
+  width: auto;
+  float: left;
+  margin: 0px 5px 0 0;
+}
+.nav_categories ul li:nth-child(1) > a {
+  background: rgb(0 55 46);
+}
+.nav_categories ul li:nth-child(2) > a {
+  background: rgb(1 81 68);
+}
+.nav_categories ul li:nth-child(3) > a {
+  background: rgb(1 94 79);
+}
+.nav_categories ul li:nth-child(4) > a {
+  background: rgb(0 118 106);
+}
+.nav_categories ul li:nth-child(5) > a {
+  background: rgb(0 137 123);
 }
 /* ------------------------------------------------*/
 /* Categories Nav End */
