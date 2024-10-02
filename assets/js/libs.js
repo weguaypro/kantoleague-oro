@@ -182,7 +182,7 @@ $((function() {
     })), $(".inner-trigger").on("click", (function(t) {
         console.log("8"),
         $(this).data('id') ? $(".all-category").hide() : $(".all-category").show()
-        $(this).data('id') === "sub-11" ? $(".sub-11").show() : $(this).data('id') === "sub-13" ? $(".sub-13").show() : $(this).data('id') === "sub-15" ? $(".sub-15").show() : $(this).data('id') === "sub-17" ? $(".sub-17").show() : $(this).data('id') === "sub-20" ? $(".sub-20").show() : $(".sub-11, .sub-20").hide(),
+        $(this).data('id') === "sub-11" ? $(".sub-11").show() : $(this).data('id') === "sub-13" ? $(".sub-13").show() : $(this).data('id') === "sub-15" ? $(".sub-15").show() : $(this).data('id') === "sub-17" ? $(".sub-17").show() : $(this).data('id') === "sub-20" ? $(".sub-20").show() : $(".sub-20").hide(),
 
         u.addClass("is-scaled-down"),
         setTimeout((function() {
